@@ -43,12 +43,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="419dp"
+        android:layout_height="463dp"
         android:background="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wt1text">
 
@@ -56,20 +55,20 @@
             android:id="@+id/wt2txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="64dp"
             android:text="WEIGHT IN POUNDS:"
             android:textColor="@color/cyan_dark"
             android:textSize="21sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.387" />
+            app:layout_constraintVertical_bias="0.37" />
 
         <TextView
             android:id="@+id/resultWt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="56dp"
             android:layout_marginTop="16dp"
             android:paddingStart="10sp"
             android:paddingEnd="10sp"
@@ -79,13 +78,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/wt2txt"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.052" />
 
         <Button
             android:id="@+id/convBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="56dp"
             android:onClick="kgTolb"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
@@ -100,12 +99,13 @@
 
         <Button
             android:id="@+id/swtch"
-            android:layout_width="41dp"
-            android:layout_height="52dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="56dp"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="49dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="80dp"
             android:onClick="changeConv"
-            app:icon="@drawable/icons8_swap_90"
+            app:icon="@drawable/exchange"
             app:iconGravity="top"
             app:iconSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
